@@ -1,4 +1,4 @@
-# SA_DE_OM_Changer
+# Grand Theft Auto: San Andreas - The Definitive Edition on_mission Changer Tool
 
 A Windows application built with WPF to toggle the `on_mission` value in the memory of *Grand Theft Auto: San Andreas* (SanAndreas.exe) using hotkeys. The program supports multiple game versions by reading hardcoded offsets or user-defined offsets stored in a JSON file. It allows users to add new game versions and their corresponding memory offsets via a user-friendly interface.
 
@@ -19,7 +19,7 @@ A Windows application built with WPF to toggle the `on_mission` value in the mem
 - **Visual Studio**: For building the project (optional, if modifying the source code).
 - **Image Resources**: Placeholder images (`version_example.png` and `address_example.png`) in the `Images` folder with the build action set to `Resource`.
 
-## Installation
+## Building
 
 1. **Clone the Repository**:
    ```bash
@@ -41,13 +41,13 @@ A Windows application built with WPF to toggle the `on_mission` value in the mem
 ## Usage
 
 1. **Launch the Application**:
-   - Run `SA_DE_OM_Changer.exe`.
+   - Download and run [`SA_DE_OM_Changer.exe`](https://github.com/SkipperSkipTR/SA_DE_OM_Changer/releases/download/1.0/SA_DE_OM_Changer.exe).
    - The application will automatically attempt to detect and attach to a running *SanAndreas* process every 500ms.
 
 2. **Monitor Status**:
    - The main window displays:
      - **Status**: Indicates whether the program is attached to the game process or any errors (e.g., "Status: Attached. Use F6 to toggle on_mission.").
-     - **on_mission Value**: Shows the current value of the `on_mission` byte (0 or 1).
+     - **on_mission Value**: Shows the current value of the `on_mission` integer (0 or 1).
 
 3. **Toggle on_mission**:
    - Press `F6` while the game is running and the program is attached to toggle the `on_mission` value between 0 and 1.
@@ -105,10 +105,6 @@ Contributions are welcome! To contribute:
 5. Open a pull request.
 
 Please include tests and update documentation as needed.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
